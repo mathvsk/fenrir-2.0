@@ -1,0 +1,88 @@
+@import "default.css";
+
+* [data-visible="desktop"] {
+  display: none;
+}
+
+body {
+  /* background-color: gray; */
+
+  padding: 2rem;
+}
+
+#app {
+  /* background: rgb(204, 204, 204); */
+  
+  min-height: 100vh;
+  max-width: 90.4rem;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 3.8rem;
+}
+
+header img {
+  width: 100%;
+  max-width: 40rem;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  gap: 8rem;
+}
+
+.banner-container {
+  position: relative;
+
+  margin-bottom: 12.5rem;
+}
+
+.banner-container img {
+  width: 100%;
+  max-width: 90.4rem;
+  border-radius: 16px;
+}
+
+.banner-container div {
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  left: 2.4rem;
+
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
+.banner-container div span:first-child {
+  font-size: 3rem;
+  font-weight: 100;
+}
+
+main h2 {
+  color: #242424;
+
+  /* font-size: 3rem; */
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: .6rem;
+
+  text-transform: uppercase;
+}
+
+.swiper img{
+  width: 100%;
+}
+main .nested-slider-h {
+  padding: 30px 0;
+}
+.nested-slider-h .nested-slider-child{
+  width: 90%;
+}
