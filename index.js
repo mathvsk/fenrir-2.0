@@ -1,53 +1,28 @@
+document.addEventListener('DOMContentLoaded', function () {
+  const optionContainers = document.querySelectorAll('.option-container');
+  const buyButtons = document.querySelectorAll('.buy-button');
 
-let a = document.querySelector('.nested-slider-h')
-let b = document.querySelector('.nested-slider-h .nested-slider-child')
+  optionContainers.forEach((container, index) => {
+    container.addEventListener('click', function () {
+      const selectedRadio = container.querySelector('input[type="radio"]:checked');
 
-new Swiper('.nested-slider-h .nested-slider-child', {
-  loop: true,
-  pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-  },
-  navigation: {
-      nextEl: ".child-navi-next",
-      prevEl: ".child-navi-prev",
-  },
-})
+      if (selectedRadio) {
+        const paymentLink = selectedRadio.value;
+        buyButtons[index].setAttribute('href', paymentLink);
 
-var swiperH; // Variável global para armazenar o Swiper
+        this.parentNode.querySelector('input[type="checkbox"]').checked = false
+      }
+    });
+  });
 
-function criarSwiperH() {
-swiperH = new Swiper(a, {
-  loop: true,            
-  pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-  },
-});
-}
+  buyButtons.forEach((button) => {
+    button.addEventListener('click', function (event) {
+      event.preventDefault(); // Impede o comportamento padrão de navegação
+      const paymentLink = button.getAttribute('href');
 
-// Crie o Swiper quando a página for carregada
-window.addEventListener('load', function() {
-criarSwiperH();
-});
-
-// Destrua o Swiper quando a largura da tela for maior que 1080 pixels
-window.addEventListener('resize', function() {
-var larguraTela = window.innerWidth;
-
-if (larguraTela > 1080) {
-  if (swiperH) {
-      swiperH.destroy();
-      swiperH = null; // Limpe a referência
-  }
-}
-});
-
-// Crie o Swiper novamente quando a largura da tela for menor que 1080 pixels
-window.addEventListener('resize', function() {
-var larguraTela = window.innerWidth;
-
-if (larguraTela <= 1080 && swiperH === null) {
-  criarSwiperH();
-}
+      if (paymentLink) {
+        window.open(paymentLink, '_blank');; // Redireciona para o link de pagamento
+      }
+    });
+  });
 });

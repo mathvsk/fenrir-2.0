@@ -14,7 +14,8 @@
   <link rel="stylesheet" href="style.css">
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+
 
 
 </head>
@@ -44,59 +45,455 @@
       <div class="products-container">
         <h2>» nossos produtos</h2>
     
-        <div class="swiper nested-slider-h">
+        <!-- <div class="swiper nested-slider-h" data-visible="mobile">
           <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="swiper nested-slider-child">
-                  <div class="swiper-wrapper">
-                      <div class="swiper-slide"><img src="./assets/banner.jpg"></div>
-                      <div class="swiper-slide"><img src="./assets/banner.jpg"></div>
-                      <div class="swiper-slide"><img src="./assets/banner.jpg"></div>
-                  </div>
-                  <div class="swiper-pagination"></div>
-                  <div class="swiper-button-prev child-navi-prev"></div>
-                  <div class="swiper-button-next child-navi-next"></div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="swiper nested-slider-child">
-                  <div class="swiper-wrapper">
-                      <div class="swiper-slide"><img src="./assets/banner.jpg"></div>
-                      <div class="swiper-slide"><img src="./assets/banner.jpg"></div>
-                      <div class="swiper-slide"><img src="./assets/banner.jpg"></div>
-                  </div>
-                  <div class="swiper-pagination"></div>
-                  <div class="swiper-button-prev child-navi-prev"></div>
-                  <div class="swiper-button-next child-navi-next"></div>
-              </div>
-            </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide card-mobile">
               <div class="swiper nested-slider-child">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide"><img src="./assets/banner.jpg"></div>
-                  <div class="swiper-slide"><img src="./assets/banner.jpg"></div>
-                  <div class="swiper-slide"><img src="./assets/banner.jpg"></div>
+                  <div class="swiper-slide"><img src="./assets/img1.png"></div>
+                  <div class="swiper-slide"><img src="./assets/img2.png"></div>
+                  <div class="swiper-slide"><img src="./assets/img3.png"></div>
+                  <div class="swiper-slide"><img src="./assets/img4.png"></div>
                 </div>
+
                 <div class="swiper-pagination"></div>
-                <div class="swiper-button-prev child-navi-prev"></div>
-                <div class="swiper-button-next child-navi-next"></div>
+              </div>
+          
+              <h3>TRISKELE - Bandeja Organizadora</h3>
+          
+              <div class="container-info">
+                <div class="product-info">
+                  <span>R$ 280</span>
+          
+                  <div class="container-select">
+                    <div id="category-select">
+                      <label for="product-6">Tamanho</label>
+                      <input type="checkbox" id="product-6">
+          
+                      <div id="select-button">
+                        <div id="selected-value">
+          
+                          <div id="chevrons">
+                            <i data-lucide="chevron-down"></i>
+                            <i data-lucide="chevron-up"></i>
+                          </div>
+          
+                        </div>
+                      </div>
+                    </div>
+          
+                    <ul id="option-6" class="option-container">
+                      <li class="option"><input type="radio" name="size-product-6">
+                        <span>Pequeno</span></input>
+                      </li>
+                      <li class="option"><input type="radio" name="size-product-6">
+                        <span>Médio</span></input>
+                      </li>
+                      <li class="option"><input type="radio" name="size-product-6">
+                        <span>Grande</></input>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+          
+                <button class="buy-button">comprar</button>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="swiper nested-slider-child">
+                  <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="./assets/banner.jpg"></div>
+                      <div class="swiper-slide"><img src="./assets/banner.jpg"></div>
+                      <div class="swiper-slide"><img src="./assets/banner.jpg"></div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                  <div class="swiper-button-prev child-navi-prev"></div>
+                  <div class="swiper-button-next child-navi-next"></div>
               </div>
             </div>
           </div>
           <div class="swiper-pagination"></div>
+        </div> -->
+        <div class="card-container">
+          <div class="card">
+            <swiper-container class="mySwiper" thumbs-swiper=".mySwiper2" loop="true" space-between="10"
+              navigation="true">
+
+              <swiper-slide>
+                <img src="assets/img1.png" />
+              </swiper-slide>
+
+              <swiper-slide>
+                <img src="assets/img2.png" />
+              </swiper-slide>
+
+              <swiper-slide>
+                <img src="assets/img3.png" />
+              </swiper-slide>
+
+              <swiper-slide>
+                <img src="assets/img4.png" />
+              </swiper-slide>
+            </swiper-container>
+
+            <swiper-container class="mySwiper2" loop="true" space-between="10" slides-per-view="4" free-mode="true"
+              watch-slides-progress="true" data-visible="desktop">
+
+              <swiper-slide>
+                <img src="assets/img-mini1.png" />
+              </swiper-slide>
+
+              <swiper-slide>
+                <img src="assets/img-mini2.png" />
+              </swiper-slide>
+
+              <swiper-slide>
+                <img src="assets/img-mini3.png" />
+              </swiper-slide>
+
+              <swiper-slide>
+                <img src="assets/img-mini4.png" />
+              </swiper-slide>
+            </swiper-container>
+
+            <h3>TRISKELE - Bandeja Organizadora</h3>
+
+            <div class="container-info">
+              <div class="product-info">
+                <span>R$ 280</span>
+
+                <div class="container-select">
+                  <div id="category-select">
+                    <label for="product-1">Tamanho</label>
+                    <input type="checkbox" id="product-1">
+
+                    <div id="select-button">
+                      <div id="selected-value">
+
+                        <div id="chevrons">
+                          <i data-lucide="chevron-down"></i>
+                          <i data-lucide="chevron-up"></i>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <ul id="option-1" class="option-container">
+                    <li class="option">
+                      <input type="radio" name="size-product-1" value="https://www.youtube.com/watch?v=oUTc5mdP_Cw&list=RDoUTc5mdP_Cw&start_radio=1">
+                      <span>Pequeno</span></input>
+                    </li>
+                    <li class="option"><input type="radio" name="size-product-1" value="https://www.youtube.com/watch?v=1aLFhjVx0Jo&list=RDoUTc5mdP_Cw&index=7" >
+                      <span>Médio</span></input>
+                    </li>
+                    <li class="option"><input type="radio" name="size-product-1" value="https://www.youtube.com/watch?v=93li1kKpR8Y&list=RDoUTc5mdP_Cw&index=7">
+                      <span>Grande</></input>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <button class="buy-button">comprar</button>
+            </div>
+
+            <!-- <button class="3D">visualização 3d</button> -->
+          </div>
+
+          <div class="card">
+            <swiper-container class="mySwiper" thumbs-swiper=".mySwiper2" loop="true" space-between="10"
+              navigation="true">
+
+              <swiper-slide>
+                <img src="assets/img1.png" />
+              </swiper-slide>
+
+              <swiper-slide>
+                <img src="assets/img2.png" />
+              </swiper-slide>
+
+              <swiper-slide>
+                <img src="assets/img3.png" />
+              </swiper-slide>
+
+              <swiper-slide>
+                <img src="assets/img4.png" />
+              </swiper-slide>
+            </swiper-container>
+
+            <swiper-container class="mySwiper2" loop="true" space-between="10" slides-per-view="4" free-mode="true"
+              watch-slides-progress="true" data-visible="desktop">
+
+              <swiper-slide>
+                <img src="assets/img-mini1.png" />
+              </swiper-slide>
+
+              <swiper-slide>
+                <img src="assets/img-mini2.png" />
+              </swiper-slide>
+
+              <swiper-slide>
+                <img src="assets/img-mini3.png" />
+              </swiper-slide>
+
+              <swiper-slide>
+                <img src="assets/img-mini4.png" />
+              </swiper-slide>
+            </swiper-container>
+
+            <h3>TRISKELE - Bandeja Organizadora</h3>
+
+            <div class="container-info">
+              <div class="product-info">
+                <span>R$ 280</span>
+
+                <div class="container-select">
+                  <div id="category-select">
+                    <label for="product-2">Tamanho</label>
+                    <input type="checkbox" id="product-2">
+
+                    <div id="select-button">
+                      <div id="selected-value">
+
+                        <div id="chevrons">
+                          <i data-lucide="chevron-down"></i>
+                          <i data-lucide="chevron-up"></i>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <ul id="option-2" class="option-container">
+                    <li class="option">
+                      <input type="radio" name="size-product-1" value="https://www.youtube.com/watch?v=oUTc5mdP_Cw&list=RDoUTc5mdP_Cw&start_radio=1">
+                      <span>Pequeno</span></input>
+                    </li>
+                    <li class="option"><input type="radio" name="size-product-1" value="https://www.youtube.com/watch?v=1aLFhjVx0Jo&list=RDoUTc5mdP_Cw&index=7" >
+                      <span>Médio</span></input>
+                    </li>
+                    <li class="option"><input type="radio" name="size-product-1" value="https://www.youtube.com/watch?v=93li1kKpR8Y&list=RDoUTc5mdP_Cw&index=7">
+                      <span>Grande</></input>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <button class="buy-button">comprar</button>
+            </div>
+
+            <!-- <button class="3D">visualização 3d</button> -->
+          </div>
         </div>
       </div>
 
-      <div class="materials-container"></div>
+      <div class="materials-container">
+        <h2>» materiais fenrir</h2>
 
-      <div class="about-container"></div>
+        <div>
+          <p>
+            <strong>Teca:</strong> considerada material nobre e estável, portanto não enverga oferecendo durabilidade,
+            resistente a água e umidade, sua tonalidade quente mescla tons claros ao mais escuros que em composição
+            com os demais materiais, traz estilo e sofisticação ao produto final.
+          </p>
+          <p>
+            <strong>Pintura laca:</strong> as maiores características deste acabamento são a perfeição que através do
+            visual e do toque acetinados apresentam extremo requinte ao produto final.
+          </p>
+          <p>
+            <strong>MDF:</strong> peça em 6mm da com acabamento melamínico que proporciona modernidade ao produto
+            final, por meio dos padrões inspirados no granilite e na pedra vulcânica.
+          </p>
+        </div>
+      </div>
 
-      <div class="values-container"></div>
+      <div class="about-container">
+        <div>
+          <h2>» quem é fenrir?</h2>
+
+          <p>
+            Fenrir é uma figura da mitologia nórdica. Na mitologia escandinava, Fenrir é um lobo gigante, filho do deus
+            Loki e da gigante Angrboda. Ele é conhecido por sua força descomunal e sua natureza feroz.
+          </p>
+
+          <p>
+            De acordo com as histórias, Fenrir foi considerado uma ameaça aos deuses, que temiam sua força crescente.
+            Por isso, eles tentaram contê-lo, mas ele provou ser tão poderoso que apenas o deus Tyr conseguiu domá-lo
+            temporariamente, perdendo sua própria mão no processo.
+          </p>
+
+          <p>
+            No entanto, a profecia dizia que Fenrir seria uma grande ameaça no fim dos tempos, conhecido como o
+            Ragnarok. Durante esse evento cataclísmico, ele se libertaria e se envolveria em uma batalha épica contra os
+            deuses, culminando na sua morte e na derrota de muitos outros seres divinos.
+          </p>
+
+          <p>
+            Fenrir é frequentemente associado à ideia de destruição e caos na mitologia nórdica. Sua figura representa a
+            selvageria, o poder incontrolável e a inevitabilidade da morte e do fim dos tempos. Ele é retratado como um
+            ser temível e indomável, sendo uma figura importante nas histórias mitológicas da cultura escandinava.
+          </p>
+        </div>
+
+        <div>
+          <h2>» por que fenrir?</h2>
+
+          <p>
+            Inspirar-se no conceito de luta contra o mal: Assim como na mitologia nórdica, onde Fenrir é visto como uma
+            ameaça aos deuses, nossa marca adota o nome Fenrir como um símbolo de luta contra as forças negativas e a
+            busca pela justiça e retidão.
+          </p>
+
+          <p>
+            Enfatizar a transformação e redenção: O nome Fenrir pode ser reinterpretado como uma representação da
+            transformação e superação de uma natureza feroz e destrutiva em algo mais positivo e edificante.
+          </p>
+
+          <p>
+            FENRIR tem a ver com força, inovação e coragem. Qualidades que queremos compartilhar com nossos
+            consumidores.
+          </p>
+        </div>
+      </div>
+
+      <div class="values">
+        <h2>» valores da marca</h2>
+
+        <div class="values-container">
+          <div>
+            <img src="assets/Rectangle.png" alt="">
+            <div>
+              <h3>Inovação</h3>
+              <p>
+                Buscar constantemente a inovação em termos de design, funcionalidade e recursos tecnológicos
+                incorporados aos móveis. Estar na vanguarda das tendências e das necessidades emergentes dos gamers e
+                trabalhadores home office.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="values-container">
+          <div>
+            <img src="assets/Rectangle.png" alt="">
+            <div>
+              <h3>Qualidade</h3>
+              <p>
+                Compromisso em fornecer produtos de alta qualidade, duráveis e confiáveis, que atendam às expectativas e
+                necessidades dos clientes. Utilizar materiais premium e processos de fabricação cuidadosos para garantir
+                a excelência em cada produto.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="values-container">
+          <div>
+            <img src="assets/Rectangle.png" alt="">
+            <div>
+              <h3>Conforto</h3>
+              <p>
+                Priorizar o conforto e a ergonomia em todos os móveis, considerando a saúde e o bem-estar dos clientes
+                durante longas sessões de jogo ou trabalho. Projetar móveis que ofereçam suporte adequado ao corpo,
+                reduzindo a fadiga e melhorando o desempenho.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="values-container">
+          <div>
+            <img src="assets/Rectangle.png" alt="">
+            <div>
+              <h3>Comunidade</h3>
+              <p>
+                Cultivar uma comunidade vibrante de gamers, e trabalhadores home office incentivando a interação, a
+                troca de conhecimentos e o compartilhamento de experiências. Promover eventos, competições e iniciativas
+                que unam os jogadores e fortaleçam os laços entre eles.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="values-container">
+          <div>
+            <img src="assets/Rectangle.png" alt="">
+            <div>
+              <h3>Integridade</h3>
+              <p>
+                Compromisso com a honestidade, transparência e ética nos negócios. Ser um exemplo de integridade e agir
+                de acordo com esse princípio em todas as áreas da empresa.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="values-container">
+          <div>
+            <img src="assets/Rectangle.png" alt="">
+            <div>
+              <h3>Honestidade</h3>
+              <p>
+                Ser verdadeiro e transparente em todas as comunicações e práticas comerciais, evitando práticas
+                enganosas ou manipuladoras.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="values-container">
+          <div>
+            <img src="assets/Rectangle.png" alt="">
+            <div>
+              <h3>Amor e respeito</h3>
+              <p>
+                Demonstração de amor e respeito por todas as pessoas, tratando os clientes, funcionários e parceiros de
+                negócios com bondade, empatia e dignidade.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
     
-    <footer></footer>
+    <footer>
+      <div>
+        <img src="assets/logo-footer.png" alt="" class="logo-footer">
+  
+        <div class="social-media">
+          <span>encontre-nos</span>
+          <div class="midias">
+            <a href="">
+              <img src="assets/insta.png" alt="">
+            </a>
+  
+            <a href="">
+              <img src="assets/face.png" alt="">
+            </a>
+  
+            <a href="">
+              <img src="assets/linkedin.png" alt="">
+            </a>
+  
+            <a href="">
+              <img src="assets/wpp.png" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+  
+      <p>Desenvolvido por Blackware - Soluções em Tecnologia</p>
+    </footer>
   </div>
 
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
   <script type="module" src="index.js"></script>
 </body>
 </html>
