@@ -24,16 +24,17 @@
     <header>
       <img src="assets/logo.png" alt="">
 
-      <nav data-visible="desktop">
-        <li>produtos</li>
-        <li>material</li>
-        <li>quem somos</li>
-        <li>nossos valores</li>
+      <nav class="nav" data-visible="desktop">
+        <li><a href="#products">produtos</a></li>
+        <li><a href="#materials">material</a></li>
+        <li><a href="#about">quem somos</a></li>
+        <li><a href="#values">nossos valores</a></li>
       </nav>
     </header>
 
     <div class="banner-container">
-      <img src="assets/banner.jpg" alt="">
+      <img src="assets/banner.jpg" alt="" data-visible="mobile">
+      <img src="assets/banner_desktop.png" alt="" data-visible="desktop">
 
       <div>
         <span>triskele</span>
@@ -42,7 +43,7 @@
     </div>
     
     <main>
-      <div class="products-container">
+      <div id="products" class="products-container">
         <h2>» nossos produtos</h2>
         
         <div class="card-container">
@@ -67,7 +68,7 @@
               </swiper-slide>
             </swiper-container>
 
-            <swiper-container class="mySwiper2" loop="true" space-between="10" slides-per-view="4" free-mode="true"
+            <swiper-container class="mySwiper2 fenrir-Swiper" loop="true" space-between="10" slides-per-view="4" free-mode="true"
               watch-slides-progress="true" data-visible="desktop">
 
               <swiper-slide>
@@ -213,30 +214,200 @@
               <button class="buy-button">comprar</button>
             </div>
           </div>
+
+          <div class="card">
+            <swiper-container class="mySwiper" thumbs-swiper=".mySwiper2" loop="true" space-between="10"
+              navigation="true">
+
+              <swiper-slide>
+                <img src="assets/img1.png" />
+              </swiper-slide>
+
+              <swiper-slide>
+                <img src="assets/img2.png" />
+              </swiper-slide>
+
+              <swiper-slide>
+                <img src="assets/img3.png" />
+              </swiper-slide>
+
+              <swiper-slide>
+                <img src="assets/img4.png" />
+              </swiper-slide>
+            </swiper-container>
+
+            <swiper-container class="mySwiper2" loop="true" space-between="10" slides-per-view="4" free-mode="true"
+              watch-slides-progress="true" data-visible="desktop">
+
+              <swiper-slide>
+                <img src="assets/img-mini1.png" />
+              </swiper-slide>
+
+              <swiper-slide>
+                <img src="assets/img-mini2.png" />
+              </swiper-slide>
+
+              <swiper-slide>
+                <img src="assets/img-mini3.png" />
+              </swiper-slide>
+
+              <swiper-slide>
+                <img src="assets/img-mini4.png" />
+              </swiper-slide>
+            </swiper-container>
+
+            <h3>TRISKELE - Bandeja Organizadora</h3>
+
+            <div class="container-info">
+              <div class="product-info">
+                <span>R$ 280</span>
+
+                <div class="container-select">
+                  <div id="category-select">
+                    <label for="product-2">Tamanho</label>
+                    <input type="checkbox" id="product-2">
+
+                    <div id="select-button">
+                      <div id="selected-value">
+
+                        <div id="chevrons">
+                          <i data-lucide="chevron-down"></i>
+                          <i data-lucide="chevron-up"></i>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <ul id="option-2" class="option-container">
+                    <li class="option">
+                      <input type="radio" name="size-product-1" value="https://www.youtube.com/watch?v=oUTc5mdP_Cw&list=RDoUTc5mdP_Cw&start_radio=1">
+                      <span>Pequeno</span></input>
+                    </li>
+                    <li class="option"><input type="radio" name="size-product-1" value="https://www.youtube.com/watch?v=1aLFhjVx0Jo&list=RDoUTc5mdP_Cw&index=7" >
+                      <span>Médio</span></input>
+                    </li>
+                    <li class="option"><input type="radio" name="size-product-1" value="https://www.youtube.com/watch?v=93li1kKpR8Y&list=RDoUTc5mdP_Cw&index=7">
+                      <span>Grande</></input>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <button class="buy-button">comprar</button>
+            </div>
+          </div>
+          <div class="card">
+            <swiper-container class="mySwiper" thumbs-swiper=".mySwiper2" loop="true" space-between="10"
+              navigation="true">
+
+              <swiper-slide>
+                <img src="assets/img1.png" />
+              </swiper-slide>
+
+              <swiper-slide>
+                <img src="assets/img2.png" />
+              </swiper-slide>
+
+              <swiper-slide>
+                <img src="assets/img3.png" />
+              </swiper-slide>
+
+              <swiper-slide>
+                <img src="assets/img4.png" />
+              </swiper-slide>
+            </swiper-container>
+
+            <swiper-container class="mySwiper2" loop="true" space-between="10" slides-per-view="4" free-mode="true"
+              watch-slides-progress="true" data-visible="desktop">
+
+              <swiper-slide>
+                <img src="assets/img-mini1.png" />
+              </swiper-slide>
+
+              <swiper-slide>
+                <img src="assets/img-mini2.png" />
+              </swiper-slide>
+
+              <swiper-slide>
+                <img src="assets/img-mini3.png" />
+              </swiper-slide>
+
+              <swiper-slide>
+                <img src="assets/img-mini4.png" />
+              </swiper-slide>
+            </swiper-container>
+
+            <h3>TRISKELE - Bandeja Organizadora</h3>
+
+            <div class="container-info">
+              <div class="product-info">
+                <span>R$ 280</span>
+
+                <div class="container-select">
+                  <div id="category-select">
+                    <label for="product-2">Tamanho</label>
+                    <input type="checkbox" id="product-2">
+
+                    <div id="select-button">
+                      <div id="selected-value">
+
+                        <div id="chevrons">
+                          <i data-lucide="chevron-down"></i>
+                          <i data-lucide="chevron-up"></i>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <ul id="option-2" class="option-container">
+                    <li class="option">
+                      <input type="radio" name="size-product-1" value="https://www.youtube.com/watch?v=oUTc5mdP_Cw&list=RDoUTc5mdP_Cw&start_radio=1">
+                      <span>Pequeno</span></input>
+                    </li>
+                    <li class="option"><input type="radio" name="size-product-1" value="https://www.youtube.com/watch?v=1aLFhjVx0Jo&list=RDoUTc5mdP_Cw&index=7" >
+                      <span>Médio</span></input>
+                    </li>
+                    <li class="option"><input type="radio" name="size-product-1" value="https://www.youtube.com/watch?v=93li1kKpR8Y&list=RDoUTc5mdP_Cw&index=7">
+                      <span>Grande</></input>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <button class="buy-button">comprar</button>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div class="materials-container">
+      <div id="materials" class="materials-container">
         <h2>» materiais fenrir</h2>
 
-        <div>
-          <p>
-            <strong>Teca:</strong> considerada material nobre e estável, portanto não enverga oferecendo durabilidade,
-            resistente a água e umidade, sua tonalidade quente mescla tons claros ao mais escuros que em composição
-            com os demais materiais, traz estilo e sofisticação ao produto final.
-          </p>
-          <p>
-            <strong>Pintura laca:</strong> as maiores características deste acabamento são a perfeição que através do
-            visual e do toque acetinados apresentam extremo requinte ao produto final.
-          </p>
-          <p>
-            <strong>MDF:</strong> peça em 6mm da com acabamento melamínico que proporciona modernidade ao produto
-            final, por meio dos padrões inspirados no granilite e na pedra vulcânica.
-          </p>
+        <div class="content-container">
+          <div>
+            <p>
+              <strong>Teca:</strong> considerada material nobre e estável, portanto não enverga oferecendo durabilidade,
+              resistente a água e umidade, sua tonalidade quente mescla tons claros ao mais escuros que em composição
+              com os demais materiais, traz estilo e sofisticação ao produto final.
+            </p>
+            <p>
+              <strong>Pintura laca:</strong> as maiores características deste acabamento são a perfeição que através do
+              visual e do toque acetinados apresentam extremo requinte ao produto final.
+            </p>
+            <p>
+              <strong>MDF:</strong> peça em 6mm da com acabamento melamínico que proporciona modernidade ao produto
+              final, por meio dos padrões inspirados no granilite e na pedra vulcânica.
+            </p>
+          </div>
+  
+          <img src="assets/madeira-mobile.png" alt="" data-visible="mobile" class="imgMadeira">
+          <img src="assets/madeira-desktop.png" alt="" data-visible="desktop" class="imgMadeira2">
         </div>
       </div>
 
-      <div class="about-container">
+      <div id="about" class="about-container">
         <div>
           <h2>» quem é fenrir?</h2>
 
@@ -285,7 +456,7 @@
         </div>
       </div>
 
-      <div class="values">
+      <div id="values" class="values">
         <h2>» valores da marca</h2>
 
         <div class="values-container">
@@ -382,38 +553,40 @@
             </div>
           </div>
         </div>
+
+        <img class="circle" src="assets/circle.png" alt="">
       </div>
     </main>
-    
-    <footer>
-      <div>
-        <img src="assets/logo-footer.png" alt="" class="logo-footer">
+  </div>
   
-        <div class="social-media">
-          <span>encontre-nos</span>
-          <div class="midias">
-            <a href="">
-              <img src="assets/insta.png" alt="">
-            </a>
-  
-            <a href="">
-              <img src="assets/face.png" alt="">
-            </a>
-  
-            <a href="">
-              <img src="assets/linkedin.png" alt="">
-            </a>
-  
-            <a href="">
-              <img src="assets/wpp.png" alt="">
-            </a>
-          </div>
+  <footer>
+    <div>
+      <img src="assets/logo-footer.png" alt="" class="logo-footer">
+
+      <div class="social-media">
+        <span>encontre-nos</span>
+        <div class="midias">
+          <a href="">
+            <img src="assets/insta.png" alt="">
+          </a>
+
+          <a href="">
+            <img src="assets/face.png" alt="">
+          </a>
+
+          <a href="">
+            <img src="assets/linkedin.png" alt="">
+          </a>
+
+          <a href="">
+            <img src="assets/wpp.png" alt="">
+          </a>
         </div>
       </div>
-  
-      <p>Desenvolvido por Blackware - Soluções em Tecnologia</p>
-    </footer>
-  </div>
+    </div>
+
+    <p>Desenvolvido por Blackware - Soluções em Tecnologia</p>
+  </footer>
 
   <script src="https://unpkg.com/lucide@latest"></script>
   <script>
