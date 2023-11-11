@@ -13,3 +13,9 @@
   font-family: 'Montserrat', sans-serif;
   font-size: 62.5%;
 }
+
+body, input, button, a {
+  font-family: 'Montserrat', sans-serif;
+  color: #000;
+  position: relative;
+}
