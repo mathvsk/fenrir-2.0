@@ -464,25 +464,9 @@ footer p {
   min-width: 9rem;
 }
 
-.imgMadeira[data-visible="mobile"] {
-  display: none;
-}
-
-.circle {
-  display: none;
-}
-
-@media (min-width: 1024px) {
-  .circle {
-    display: none;
-  }
-  
-  * [data-visible="desktop"] {
-    display: none;
-  }
-
-  .imgMadeira[data-visible="mobile"] {
-    display: block;
+@media (min-width: 768px) {
+  body{ 
+    padding: 0 8.8rem;
   }
 
   #app {
