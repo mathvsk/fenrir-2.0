@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const text = document.querySelectorAll('.product-name');
   const price = document.querySelectorAll('.product-info');
   const cards = document.querySelectorAll('.card .mySwiper')
+  const miniCards = document.querySelectorAll('.fenrir-Swiper')
 
   // Função para atualizar o conteúdo e comportamento dos elementos ao clicar
   function updateProduct(index, selectedRadio) {
@@ -17,6 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
     price[index].querySelector('span').innerText = priceValue;
     text[index].textContent = text[index].innerText.replace(/ - [PM]/, '') + size;
     cards[index].querySelector('.medidas img').src = `./assets/products/${selectedRadio.className}.png`;
+    miniCards[index].querySelector('.miniSwiper-medidas img').src = `./assets/products/${selectedRadio.className}.png`;
 
     // Desmarca o checkbox
     optionContainers[index].parentNode.querySelector('input[type="checkbox"]').checked = false;
