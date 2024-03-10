@@ -19,3 +19,7 @@ body, input, button, a {
   color: #000;
   position: relative;
 }
+
+.none {
+  display: none;
+}

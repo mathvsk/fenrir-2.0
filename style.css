@@ -109,15 +109,22 @@ main h2 {
 }
 
 .card {
-  max-width: 38rem;
+  max-width: 100%;
+}
+
+.frete {
+  opacity: 0.5;
 }
 
 .card-container {
-  display: grid;
-  grid-template-columns: repeat(2, 47%);
-  row-gap: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
 
   justify-content: space-between;
+  max-width: 38rem;
+  margin: 0 auto;
 }
 
 swiper-slide img {
@@ -131,9 +138,13 @@ swiper-container::part(button-prev) {
   height: 3rem;
 }
 
-.mySwiper2 {
+.padding-Swippper {
   margin-top: 4.4rem;
+}
 
+.selected {
+  border: 2px solid red; /* Por exemplo, uma borda vermelha de 2px */
+  /* Adicione outros estilos conforme necessário */
 }
 
 .card h3 {
@@ -472,6 +483,17 @@ footer p {
   display: none;
 }
 
+@media (min-width: 768px) {
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 47%);
+    row-gap: 5rem;
+
+    justify-content: space-between;
+    max-width: 100%;
+  }
+}
+
 @media (min-width: 1024px) {
   * [data-visible="desktop"] {
     display: none;
@@ -648,6 +670,7 @@ footer p {
 
   .card-container {
     row-gap: 15rem;
+    justify-items: center;
   }
 }
 
@@ -698,14 +721,12 @@ footer p {
   }
 
   .card-container {
-    grid-template-columns: repeat(3, 1fr);
     gap: 12rem;
     justify-content: normal;
   }
 
   .card {
-    min-width: 28rem;
-    max-width: 43.4rem;
+    width: 100%;
   }
 
   .products-container {
